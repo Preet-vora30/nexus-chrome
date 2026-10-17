@@ -1,0 +1,162 @@
+/* Nexus Browser OS — Design system tokens.
+   ==========================================================================
+   All colors are HSL strings so they can be composed with alpha values
+   (e.g. `hsl(var(--primary) / 0.5)`). Customize this file to rebrand.
+   ========================================================================== */
+
+:root,
+[data-theme="light"] {
+  /* Core */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  /* Brand */
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --primary-hover: 221.2 83.2% 45%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+
+  /* Semantics */
+  --success: 142.1 70.6% 45.3%;
+  --success-foreground: 210 40% 98%;
+  --warning: 47.9 95.8% 53.1%;
+  --warning-foreground: 222.2 84% 4.9%;
+
+  /* Nexus Aurora — Light accents */
+  --accent-blue: 217 91% 55%;
+  --accent-violet: 265 85% 55%;
+  --accent-cyan: 188 92% 52%;
+  --aurora-glow:
+    radial-gradient(
+      ellipse 70% 50% at 15% -10%,
+      hsla(265, 60%, 55%, 0.06),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse 60% 35% at 85% 0%,
+      hsla(217, 80%, 55%, 0.05),
+      transparent 40%
+    );
+  --ring: 217 91% 55%;
+
+  /* Radius */
+  --radius: 0.75rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 hsl(var(--foreground) / 0.05);
+  --shadow:
+    0 1px 3px 0 hsl(var(--foreground) / 0.1),
+    0 1px 2px -1px hsl(var(--foreground) / 0.1);
+  --shadow-md:
+    0 4px 6px -1px hsl(var(--foreground) / 0.1),
+    0 2px 4px -2px hsl(var(--foreground) / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px hsl(var(--foreground) / 0.1),
+    0 4px 6px -4px hsl(var(--foreground) / 0.1);
+
+  /* Motion */
+  --transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Spacing scale */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+}
+
+[data-theme="dark"] {
+  /* Core */
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  /* Brand */
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --primary-hover: 221.2 83.2% 65%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 45%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 221.2 83.2% 53.3%;
+
+  /* Semantics */
+  --success: 142.1 70.6% 45.3%;
+  --success-foreground: 210 40% 98%;
+  --warning: 47.9 95.8% 53.1%;
+  --warning-foreground: 222.2 84% 4.9%;
+
+  /* Shadows (lifted surfaces read better on dark) */
+  --shadow-sm: 0 1px 2px 0 hsl(var(--foreground) / 0.2);
+  --shadow:
+    0 1px 3px 0 hsl(var(--foreground) / 0.3),
+    0 1px 2px -1px hsl(var(--foreground) / 0.3);
+  --shadow-md:
+    0 4px 6px -1px hsl(var(--foreground) / 0.3),
+    0 2px 4px -2px hsl(var(--foreground) / 0.3);
+  --shadow-lg:
+    0 10px 15px -3px hsl(var(--foreground) / 0.3),
+    0 4px 6px -4px hsl(var(--foreground) / 0.3);
+
+  /* Nexus Aurora — Midnight accents */
+  --accent-blue: 217 91% 60%;
+  --accent-violet: 265 85% 60%;
+  --accent-cyan: 188 92% 58%;
+  --aurora-glow:
+    radial-gradient(
+      ellipse 70% 50% at 15% -10%,
+      hsla(265, 70%, 55%, 0.10),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse 60% 35% at 85% 0%,
+      hsla(217, 90%, 55%, 0.08),
+      transparent 40%
+    );
+  --ring: 217 91% 60%;
+}
