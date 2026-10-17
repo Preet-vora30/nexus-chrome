@@ -26,8 +26,9 @@ async function ensureDefaults(): Promise<void> {
   }
 }
 
+import { migrateStorage } from '@/lib/storage';
+
 async function runMigrations(): Promise<void> {
-  const { migrateStorage } = await import('@/lib/storage');
   await migrateStorage();
 }
 
